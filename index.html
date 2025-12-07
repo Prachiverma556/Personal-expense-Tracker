@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Expense Tracker</h1>
+
+    <section class="form-section">
+      <h2>Add Expense</h2>
+      <form id="expense-form">
+        <input type="number" id="amount" placeholder="Amount (₹)" required step="0.01" />
+        <select id="category" required>
+          <option value="">Select category</option>
+          <option>Food</option>
+          <option>Transport</option>
+          <option>Bills</option>
+          <option>Shopping</option>
+          <option>Entertainment</option>
+          <option>Other</option>
+        </select>
+        <input type="date" id="date" required />
+        <input type="text" id="note" placeholder="Note (optional)" />
+        <button type="submit">Add Expense</button>
+      </form>
+    </section>
+
+    <section class="summary">
+      <div id="total">Total: ₹0.00</div>
+      <button id="export-btn">Export CSV</button>
+    </section>
+
+    <section class="list-section">
+      <h2>Expenses</h2>
+      <input type="month" id="filter-month" />
+      <table id="expenses-table">
+        <thead>
+          <tr><th>Date</th><th>Category</th><th>Amount</th><th>Note</th><th>Action</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
