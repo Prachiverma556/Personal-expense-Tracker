@@ -17,4 +17,8 @@ h1{margin:0 0 12px}
 @media(max-width:640px){
   #expense-form input,#expense-form select{min-width:100%}
 }
+.action-btn{ background:#eef2ff;border:1px solid #d4d7f5;padding:6px 8px;border-radius:6px; margin-right:6px; cursor:pointer}
+.action-btn[data-action="delete"]{ background:#fff0f0;border-color:#ffd6d6}
+#expense-form button{ min-width:120px }
+#expenses-table td{ vertical-align:middle }
 
