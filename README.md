@@ -1,4 +1,3 @@
-# Personal-expense-Tracker
 # Personal Expense Tracker
 
 A tiny beginner-friendly expense tracker that stores data in the browser (localStorage).
